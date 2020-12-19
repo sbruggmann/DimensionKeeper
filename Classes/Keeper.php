@@ -3,7 +3,7 @@ namespace Ttree\DimensionKeeper;
 
 use Neos\ContentRepository\Domain\Model\NodeInterface;
 use Neos\Flow\Annotations as Flow;
-use Neos\Flow\Log\PsrSystemLoggerInterface;
+use Psr\Log\LoggerInterface;
 
 /**
  * @Flow\Scope("singleton")
@@ -13,7 +13,7 @@ class Keeper
     const CONFIGURATION_PATH = 'options.TtreeDimensionKeeper:Properties';
 
     /**
-     * @var PsrSystemLoggerInterface
+     * @var LoggerInterface
      * @Flow\Inject
      */
     protected $systemLogger;
